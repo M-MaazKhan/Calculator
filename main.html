@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amber — Calculator</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Sora:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="rig">
+
+    <div class="brand">
+      <span class="brand-mark">AMBER</span>
+      <span class="brand-model">MODEL 04</span>
+    </div>
+
+    <div class="calculator" id="calculator">
+
+      <div class="screen-housing">
+        <div class="screen">
+          <div class="screen-glow"></div>
+          <div class="history" id="history">&nbsp;</div>
+          <div class="display" id="display">0</div>
+        </div>
+        <div class="screen-label">
+          <span class="dot" id="statusDot"></span>
+          <span id="statusText">READY</span>
+        </div>
+      </div>
+
+      <div class="keys">
+
+        <button class="key key-func" data-action="clear">AC</button>
+        <button class="key key-func" data-action="negate">±</button>
+        <button class="key key-func" data-action="percent">%</button>
+        <button class="key key-op" data-action="divide">÷</button>
+
+        <button class="key key-num" data-num="7">7</button>
+        <button class="key key-num" data-num="8">8</button>
+        <button class="key key-num" data-num="9">9</button>
+        <button class="key key-op" data-action="multiply">×</button>
+
+        <button class="key key-num" data-num="4">4</button>
+        <button class="key key-num" data-num="5">5</button>
+        <button class="key key-num" data-num="6">6</button>
+        <button class="key key-op" data-action="subtract">−</button>
+
+        <button class="key key-num" data-num="1">1</button>
+        <button class="key key-num" data-num="2">2</button>
+        <button class="key key-num" data-num="3">3</button>
+        <button class="key key-op" data-action="add">+</button>
+
+        <button class="key key-num key-zero" data-num="0">0</button>
+        <button class="key key-num" data-action="decimal">.</button>
+        <button class="key key-equals" data-action="equals">=</button>
+
+      </div>
+    </div>
+
+    <div class="rig-footer">tactile · precise · warm</div>
+
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
